@@ -32,12 +32,17 @@ class Home extends Component {
                     <Jumbotron className="w-100">
                         <div className="row row-header">
                             <div className="col-12 col-sm-6">
-                                <h1>Todo List</h1>
-                                <p>This is a todo list website, you can create your own schedules by using our website.</p>
+                                <h1 className="text-primary">Todo List</h1>
+                                <p className="text-secondary">This is a todo list website, you can create your own schedules by using our website.</p>
                             </div>
                             <div className="col-12 col-sm-6">
-                                <Button outline className="mt-5 mr-5 mb-5 w-50"
-                                    color="primary" size="lg" onClick={this.test}>Try Cookie</Button>
+                                <h2 className="text-success">Organize life</h2>
+                                <h3 className="text-warning">Then go enjoy it…</h3>
+                                <h4 className="text-danger">Life can feel overwhelming, 
+                                    but it doesn’t have to. Todoist lets you keep 
+                                    track of everything in one place, 
+                                    so you can get it all done and enjoy 
+                                    more peace of mind along the way.</h4>
                             </div>
                         </div>
                     </Jumbotron>
