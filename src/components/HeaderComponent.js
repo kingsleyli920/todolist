@@ -24,7 +24,8 @@ class Header extends Component {
         super(props);
         console.log(`constructor`);
         const userInfo = sessionStorage.getItem('userInfo') || cookie.getCookie('userInfo');
-        if (userInfo) {
+        console.log(userInfo);
+        if (userInfo && userInfo != 'undefined') {
             this.state = {
                 isNavOpen: false,
                 isModalSignupOpen: false,
@@ -105,6 +106,9 @@ class Header extends Component {
             data: values
         }).then(response => {
             console.log(response);
+            if (response.data.success) {
+                alert('Sign Up Success');
+            }
         }).catch(err => {
             console.log(err);
         });
@@ -130,6 +134,8 @@ class Header extends Component {
                     userInfo: res[0],
                     loggedIn: true
                 });
+            } else {
+                alert("Username or Password is not match");
             }
             if (this.remember.checked) {
                 sessionStorage.setItem('userInfo', JSON.stringify(res[0]));
