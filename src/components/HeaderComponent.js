@@ -99,6 +99,7 @@ class Header extends Component {
 
     handleSignup(values) {
         this.toggleSignupModal();
+        console.log(`baseurl is: ${baseUrl}users/signup/`);
         axios({
             method: 'post',
             url: `${baseUrl}users/signup/`,
@@ -123,10 +124,13 @@ class Header extends Component {
         axios({
             method: 'post',
             url: `${baseUrl}users/login/`,
-            header: { 'Content-Type': 'application/json' },
+            header: { 
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+             },
             data: values
         }).then(response => {
-            console.log(response.data.data[0]);
+            // console.log(response.data.data[0]);
             var res = response.data.data;
             console.log(res.length);
             if (res.length > 0) {
