@@ -1,3 +1,51 @@
+## Introduction 
+This is a todo list full stack project. Front end is implemented by React. The server side is implemented by Django 1.8+ (Python 2.7) and Django Restful Framework. Database is PostgresSQL.
+
+### Server side located at: [todolist-server](https://github.com/kingsleyli920/todolist-server).
+
+##Below are main features of this project:
+1. One Page Web Application
+![One Page Web Application](https://raw.githubusercontent.com/kingsleyli920/todolist/master/images/screenshot1.gif)
+- Sign up a new user
+![Sign up a new user](https://raw.githubusercontent.com/kingsleyli920/todolist/master/images/screenshot2.gif)
+- Login a user (without remember)
+![Sign up a new user](https://raw.githubusercontent.com/kingsleyli920/todolist/master/images/screenshot4.gif)
+- Login a user with remember username and password
+![Sign up a new user](https://raw.githubusercontent.com/kingsleyli920/todolist/master/images/screenshot5.gif)
+- Sign out a User
+![Sign up a new user](https://raw.githubusercontent.com/kingsleyli920/todolist/master/images/screenshot3.gif)
+- Switch by tabs
+![Sign up a new user](https://raw.githubusercontent.com/kingsleyli920/todolist/master/images/screenshot6.gif)
+- Create a new one time schedule
+![Sign up a new user](https://raw.githubusercontent.com/kingsleyli920/todolist/master/images/screenshot7.gif)
+- Create a new schedule with start time and end time
+![Sign up a new user](https://raw.githubusercontent.com/kingsleyli920/todolist/master/images/screenshot8.gif)
+- Order the schedule list by :
+	* Default (update time)
+	* Priority High to Low
+	* Priority Low to High
+	* Expired Time Early
+	* Expired Time Late
+	* Start Time Early
+	* Start Time Late
+	* Status
+![Sign up a new user](https://raw.githubusercontent.com/kingsleyli920/todolist/master/images/screenshot9.gif)
+- Pagination:
+	* Details please see image below
+![Sign up a new user](https://raw.githubusercontent.com/kingsleyli920/todolist/master/images/screenshot10.gif)
+- Delete items:
+	* Details please see image below
+![Sign up a new user](https://raw.githubusercontent.com/kingsleyli920/todolist/master/images/screenshot12.gif)
+- Edit items:
+	* change status
+	* change start and end time
+	* change title and content
+	* change priority
+![Sign up a new user](https://raw.githubusercontent.com/kingsleyli920/todolist/master/images/screenshot11.gif)
+- More details please see images below
+
+#Below is instructions:
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
